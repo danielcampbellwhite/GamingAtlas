@@ -7,7 +7,7 @@ export const siteConfig = {
   description:
     "Gaming Atlas is an interactive digital museum of video game history — explore gaming timelines, console generations, world records, gaming legends, and industry milestones.",
   // Production URL of the deployed site (used for canonical, OG, sitemap).
-  url: "https://danielcampbellwhite.github.io/gamingatlas",
+  url: "https://danielcampbellwhite.github.io/GamingAtlas",
   // Resolved at build time from next.config.ts (e.g. "/gamingatlas" or "").
   basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
   author: "Gaming Atlas",

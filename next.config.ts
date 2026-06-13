@@ -15,7 +15,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 // Allow the workflow / custom domains to override the base path.
 const rawBasePath =
-  process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd ? "/gamingatlas" : "");
+  process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd ? "/GamingAtlas" : "");
 const basePath = rawBasePath === "/" ? "" : rawBasePath;
 
 const nextConfig: NextConfig = {

@@ -103,7 +103,7 @@ npm run serve   # serves ./out at http://localhost:3000
 ```
 
 > In development the site runs at the root (`/`). In production it is built with
-> a base path of `/gamingatlas` (see configuration below).
+> a base path of `/GamingAtlas` (see configuration below).
 
 ---
 
@@ -129,20 +129,20 @@ The workflow will:
 Your site will be live at:
 
 ```
-https://<your-username>.github.io/gamingatlas/
+https://<your-username>.github.io/GamingAtlas/
 ```
 
 ### Base path configuration
 
 GitHub Pages **project sites** are served from a sub-path
-(`/<repo-name>/`), so the app sets `basePath: "/gamingatlas"` in production.
+(`/<repo-name>/`), so the app sets `basePath: "/GamingAtlas"` in production.
 
 `next.config.ts` reads the `NEXT_PUBLIC_BASE_PATH` environment variable, so you
 can override it:
 
 | Deployment target                             | `NEXT_PUBLIC_BASE_PATH` |
 | --------------------------------------------- | ----------------------- |
-| `username.github.io/gamingatlas` (project)    | `/gamingatlas` (default)|
+| `username.github.io/GamingAtlas` (project)    | `/GamingAtlas` (default)|
 | Custom domain or `username.github.io` (root)  | `""` (empty)            |
 
 If your repository has a **different name**, update the default in
