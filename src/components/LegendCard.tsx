@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Legend } from "@/lib/types";
 
 /** Derive up to two initials for the avatar monogram. */
@@ -21,7 +22,14 @@ export default function LegendCard({ legend }: { legend: Legend }) {
           {initials(legend.name)}
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-white">{legend.name}</h3>
+          <h3 className="text-lg font-semibold text-white">
+            <Link
+              href={`/legends/${legend.id}`}
+              className="transition hover:text-atlas-300"
+            >
+              {legend.name}
+            </Link>
+          </h3>
           <p className="text-sm text-atlas-300">{legend.role}</p>
           <p className="text-xs text-slate-500">
             {legend.country}
@@ -61,6 +69,13 @@ export default function LegendCard({ legend }: { legend: Legend }) {
           ))}
         </ul>
       </div>
+
+      <Link
+        href={`/legends/${legend.id}`}
+        className="mt-4 inline-block text-sm font-medium text-atlas-300 hover:text-atlas-200"
+      >
+        Full profile →
+      </Link>
     </article>
   );
 }

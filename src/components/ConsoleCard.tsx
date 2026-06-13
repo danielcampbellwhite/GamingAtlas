@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Console } from "@/lib/types";
 
 export default function ConsoleCard({ console }: { console: Console }) {
@@ -8,7 +9,14 @@ export default function ConsoleCard({ console }: { console: Console }) {
     >
       <div className="flex items-start justify-between gap-3">
         <div>
-          <h3 className="text-lg font-semibold text-white">{console.name}</h3>
+          <h3 className="text-lg font-semibold text-white">
+            <Link
+              href={`/consoles/${console.id}`}
+              className="transition hover:text-atlas-300"
+            >
+              {console.name}
+            </Link>
+          </h3>
           <p className="text-sm text-slate-400">{console.manufacturer}</p>
         </div>
         <span className="chip shrink-0">Gen {console.generation}</span>
@@ -60,12 +68,20 @@ export default function ConsoleCard({ console }: { console: Console }) {
         </div>
       )}
 
-      <p className="mt-4 border-t border-white/10 pt-3 text-xs text-slate-500">
-        {console.decade}
-        {console.discontinuedYear
-          ? ` · Discontinued ${console.discontinuedYear}`
-          : " · In production"}
-      </p>
+      <div className="mt-4 flex items-center justify-between gap-3 border-t border-white/10 pt-3">
+        <p className="text-xs text-slate-500">
+          {console.decade}
+          {console.discontinuedYear
+            ? ` · Discontinued ${console.discontinuedYear}`
+            : " · In production"}
+        </p>
+        <Link
+          href={`/consoles/${console.id}`}
+          className="shrink-0 text-sm font-medium text-atlas-300 hover:text-atlas-200"
+        >
+          Details →
+        </Link>
+      </div>
     </article>
   );
 }

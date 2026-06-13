@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { GameRecord } from "@/lib/types";
 
 export default function RecordCard({ record }: { record: GameRecord }) {
@@ -12,7 +13,14 @@ export default function RecordCard({ record }: { record: GameRecord }) {
         </time>
       </div>
 
-      <h3 className="mt-3 text-lg font-semibold text-white">{record.title}</h3>
+      <h3 className="mt-3 text-lg font-semibold text-white">
+        <Link
+          href={`/records/${record.id}`}
+          className="transition hover:text-atlas-300"
+        >
+          {record.title}
+        </Link>
+      </h3>
 
       <p className="mt-3 font-display text-2xl font-bold gradient-text">
         {record.record}
@@ -23,21 +31,29 @@ export default function RecordCard({ record }: { record: GameRecord }) {
         {record.description}
       </p>
 
-      <p className="mt-4 border-t border-white/10 pt-3 text-xs text-slate-500">
-        Source:{" "}
-        {record.sourceUrl ? (
-          <a
-            href={record.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-atlas-300 hover:text-atlas-200"
-          >
-            {record.source}
-          </a>
-        ) : (
-          record.source
-        )}
-      </p>
+      <div className="mt-4 flex items-center justify-between gap-3 border-t border-white/10 pt-3 text-xs text-slate-500">
+        <p>
+          Source:{" "}
+          {record.sourceUrl ? (
+            <a
+              href={record.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-atlas-300 hover:text-atlas-200"
+            >
+              {record.source}
+            </a>
+          ) : (
+            record.source
+          )}
+        </p>
+        <Link
+          href={`/records/${record.id}`}
+          className="shrink-0 text-sm font-medium text-atlas-300 hover:text-atlas-200"
+        >
+          Details →
+        </Link>
+      </div>
     </article>
   );
 }

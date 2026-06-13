@@ -4,8 +4,13 @@ import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
 import TimelineCard from "@/components/TimelineCard";
 import ConsoleCard from "@/components/ConsoleCard";
+import GameCard from "@/components/GameCard";
 import { decades } from "@/config/site";
-import { getConsolesByDecade, getTimelineByDecade } from "@/lib/data";
+import {
+  getConsolesByDecade,
+  getGamesByDecade,
+  getTimelineByDecade,
+} from "@/lib/data";
 import { buildMetadata } from "@/lib/seo";
 
 interface Params {
@@ -44,6 +49,7 @@ export default async function DecadePage({ params }: Params) {
 
   const events = getTimelineByDecade(decade);
   const consoles = getConsolesByDecade(decade);
+  const games = getGamesByDecade(decade);
 
   return (
     <>
@@ -94,6 +100,19 @@ export default async function DecadePage({ params }: Params) {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {consoles.map((c) => (
               <ConsoleCard key={c.id} console={c} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {games.length > 0 && (
+        <section className="container-atlas py-8">
+          <h2 className="mb-6 font-display text-2xl font-bold text-white">
+            Games of the {decade}
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {games.map((g) => (
+              <GameCard key={g.id} game={g} />
             ))}
           </div>
         </section>

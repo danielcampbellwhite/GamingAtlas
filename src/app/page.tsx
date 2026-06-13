@@ -2,6 +2,7 @@ import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 import FeaturedArticleCard from "@/components/FeaturedArticleCard";
 import ConsoleCard from "@/components/ConsoleCard";
+import GameCard from "@/components/GameCard";
 import RecordCard from "@/components/RecordCard";
 import TimelineCard from "@/components/TimelineCard";
 import TodayInHistory from "@/components/TodayInHistory";
@@ -12,6 +13,7 @@ import { websiteJsonLd } from "@/lib/seo";
 import {
   getConsoles,
   getFeaturedArticles,
+  getGames,
   getGamingFacts,
   getRecords,
   getTimeline,
@@ -59,6 +61,11 @@ export default function HomePage() {
     )
     .slice(0, 4);
   const latestRecords = getRecords().slice(0, 3);
+  const famousGames = getGames()
+    .filter((g) =>
+      ["super-mario-bros", "doom", "minecraft", "ocarina-of-time", "tetris", "elden-ring"].includes(g.id),
+    )
+    .slice(0, 3);
   const timelinePreview = [...timeline]
     .filter((e) => e.milestone)
     .slice(-4)
@@ -120,6 +127,21 @@ export default function HomePage() {
         <div className="grid gap-6 sm:grid-cols-2">
           {popularConsoles.map((c) => (
             <ConsoleCard key={c.id} console={c} />
+          ))}
+        </div>
+      </section>
+
+      {/* Famous games */}
+      <section className="container-atlas py-14">
+        <SectionHeading
+          title="Famous Games"
+          description="Landmark titles that defined genres and generations."
+          href="/games"
+          linkLabel="All games"
+        />
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {famousGames.map((g) => (
+            <GameCard key={g.id} game={g} />
           ))}
         </div>
       </section>
