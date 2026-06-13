@@ -1,0 +1,314 @@
+[
+  {
+    "id": "tl-1958-tennis",
+    "year": 1958,
+    "date": "1958-10-18",
+    "title": "Tennis for Two debuts",
+    "category": "Games",
+    "decade": "1950s",
+    "description": "Physicist William Higinbotham creates Tennis for Two on an oscilloscope at Brookhaven National Laboratory — one of the earliest video games ever made.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1962-spacewar",
+    "year": 1962,
+    "title": "Spacewar! is created at MIT",
+    "category": "Games",
+    "decade": "1960s",
+    "description": "Steve Russell and colleagues build Spacewar! on a PDP-1, the first widely distributed and influential digital computer game.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1972-odyssey",
+    "year": 1972,
+    "date": "1972-09-01",
+    "title": "Magnavox Odyssey launches",
+    "category": "Consoles",
+    "decade": "1970s",
+    "description": "The first commercial home video game console arrives, bringing interactive play to television sets for the first time.",
+    "milestone": true,
+    "impact": "Established the home console as a product category."
+  },
+  {
+    "id": "tl-1972-pong",
+    "year": 1972,
+    "date": "1972-11-29",
+    "title": "Atari releases Pong",
+    "category": "Games",
+    "decade": "1970s",
+    "description": "Pong becomes the first commercially successful arcade video game and launches Atari as an industry force.",
+    "milestone": true,
+    "impact": "Kick-started the commercial arcade industry."
+  },
+  {
+    "id": "tl-1977-atari2600",
+    "year": 1977,
+    "date": "1977-09-11",
+    "title": "Atari 2600 released",
+    "category": "Consoles",
+    "decade": "1970s",
+    "description": "The cartridge-based Atari 2600 popularizes interchangeable games and dominates the home market.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1978-space-invaders",
+    "year": 1978,
+    "title": "Space Invaders ignites arcade craze",
+    "category": "Games",
+    "decade": "1970s",
+    "description": "Taito's Space Invaders sparks a global arcade phenomenon and reportedly causes a coin shortage in Japan.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1980-pacman",
+    "year": 1980,
+    "title": "Pac-Man releases",
+    "category": "Games",
+    "decade": "1980s",
+    "description": "Namco's Pac-Man becomes a cultural icon and one of the highest-grossing arcade games of all time.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1981-nintendo-dk",
+    "year": 1981,
+    "title": "Donkey Kong introduces Mario",
+    "category": "Games",
+    "decade": "1980s",
+    "description": "Shigeru Miyamoto's Donkey Kong debuts 'Jumpman' — later renamed Mario — launching gaming's most famous mascot.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1983-crash",
+    "year": 1983,
+    "title": "The North American video game crash",
+    "category": "Companies",
+    "decade": "1980s",
+    "description": "Market saturation and low-quality titles trigger a collapse that wipes out much of the U.S. console industry.",
+    "milestone": true,
+    "impact": "Reset the industry and opened the door for Nintendo's revival."
+  },
+  {
+    "id": "tl-1985-nes",
+    "year": 1985,
+    "date": "1985-10-18",
+    "title": "NES launches in North America",
+    "category": "Consoles",
+    "decade": "1980s",
+    "description": "Nintendo revives the home console market with the NES and Super Mario Bros.",
+    "milestone": true,
+    "impact": "Rebuilt the console market after the 1983 crash."
+  },
+  {
+    "id": "tl-1989-gameboy",
+    "year": 1989,
+    "title": "Game Boy launches with Tetris",
+    "category": "Consoles",
+    "decade": "1980s",
+    "description": "Nintendo's Game Boy popularizes handheld gaming, bundled with the addictive puzzle game Tetris.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1991-sonic",
+    "year": 1991,
+    "title": "Sonic the Hedgehog debuts",
+    "category": "Games",
+    "decade": "1990s",
+    "description": "Sega launches its speedy mascot to challenge Nintendo, intensifying the 16-bit console war.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1993-doom",
+    "year": 1993,
+    "date": "1993-12-10",
+    "title": "DOOM redefines the FPS",
+    "category": "Games",
+    "decade": "1990s",
+    "description": "id Software's DOOM popularizes the first-person shooter, networked multiplayer, and the shareware distribution model.",
+    "milestone": true,
+    "impact": "Established the FPS genre and PC gaming as a cultural force."
+  },
+  {
+    "id": "tl-1994-playstation",
+    "year": 1994,
+    "date": "1994-12-03",
+    "title": "Sony PlayStation launches in Japan",
+    "category": "Consoles",
+    "decade": "1990s",
+    "description": "Sony enters the console market with a CD-based system that reshapes the industry.",
+    "milestone": true,
+    "impact": "Brought 3D, CD media, and mature games to the mainstream."
+  },
+  {
+    "id": "tl-1996-mario64",
+    "year": 1996,
+    "title": "Super Mario 64 defines 3D platforming",
+    "category": "Games",
+    "decade": "1990s",
+    "description": "The Nintendo 64 launch title sets the template for analog 3D movement and camera control.",
+    "milestone": false
+  },
+  {
+    "id": "tl-1998-ocarina",
+    "year": 1998,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "category": "Games",
+    "decade": "1990s",
+    "description": "Widely regarded as one of the greatest games ever made, pioneering Z-targeting and 3D action-adventure design.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2000-ps2",
+    "year": 2000,
+    "date": "2000-03-04",
+    "title": "PlayStation 2 released",
+    "category": "Consoles",
+    "decade": "2000s",
+    "description": "The PS2 launches and goes on to become the best-selling home console of all time.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2001-xbox",
+    "year": 2001,
+    "date": "2001-11-15",
+    "title": "Microsoft launches the Xbox",
+    "category": "Consoles",
+    "decade": "2000s",
+    "description": "Microsoft enters the console business with Halo: Combat Evolved and a built-in hard drive.",
+    "milestone": true,
+    "impact": "Set the stage for modern online console gaming."
+  },
+  {
+    "id": "tl-2002-xbox-live",
+    "year": 2002,
+    "title": "Xbox Live launches",
+    "category": "Technology",
+    "decade": "2000s",
+    "description": "Microsoft's unified online service brings matchmaking, friends lists, and downloads to consoles.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2003-steam",
+    "year": 2003,
+    "date": "2003-09-12",
+    "title": "Valve releases Steam",
+    "category": "Technology",
+    "decade": "2000s",
+    "description": "Steam debuts as a digital distribution platform, eventually transforming how PC games are sold and played.",
+    "milestone": true,
+    "impact": "Pioneered mainstream digital game distribution."
+  },
+  {
+    "id": "tl-2004-wow",
+    "year": 2004,
+    "title": "World of Warcraft launches",
+    "category": "Games",
+    "decade": "2000s",
+    "description": "Blizzard's MMORPG becomes a cultural juggernaut with millions of subscribers.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2006-wii",
+    "year": 2006,
+    "date": "2006-11-19",
+    "title": "Nintendo Wii brings motion control",
+    "category": "Consoles",
+    "decade": "2000s",
+    "description": "The Wii's motion controls broaden gaming's audience and become a worldwide sensation.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2007-iphone",
+    "year": 2007,
+    "title": "The iPhone launches mobile gaming",
+    "category": "Technology",
+    "decade": "2000s",
+    "description": "The App Store era begins shortly after, opening an enormous new market for mobile games.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2009-league",
+    "year": 2009,
+    "title": "League of Legends releases",
+    "category": "Esports",
+    "decade": "2000s",
+    "description": "Riot Games' MOBA becomes a cornerstone of competitive esports for the next decade.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2011-twitch",
+    "year": 2011,
+    "title": "Twitch launches",
+    "category": "Esports",
+    "decade": "2010s",
+    "description": "Live game streaming explodes in popularity, creating new careers and viewing habits.",
+    "milestone": true,
+    "impact": "Made game streaming a mainstream entertainment medium."
+  },
+  {
+    "id": "tl-2011-minecraft",
+    "year": 2011,
+    "title": "Minecraft 1.0 releases",
+    "category": "Games",
+    "decade": "2010s",
+    "description": "Mojang's sandbox game launches officially and becomes the best-selling video game of all time.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2013-ps4-x1",
+    "year": 2013,
+    "title": "PS4 and Xbox One launch",
+    "category": "Consoles",
+    "decade": "2010s",
+    "description": "The eighth generation begins with a renewed focus on online services and indie games.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2017-switch",
+    "year": 2017,
+    "date": "2017-03-03",
+    "title": "Nintendo Switch launches",
+    "category": "Consoles",
+    "decade": "2010s",
+    "description": "Nintendo's hybrid console debuts with Breath of the Wild and becomes a runaway success.",
+    "milestone": true,
+    "impact": "Reinvented Nintendo with a hybrid home/handheld design."
+  },
+  {
+    "id": "tl-2017-fortnite",
+    "year": 2017,
+    "title": "Fortnite Battle Royale releases",
+    "category": "Games",
+    "decade": "2010s",
+    "description": "Epic Games' free-to-play battle royale becomes a global cultural phenomenon.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2018-fortnite-record",
+    "year": 2019,
+    "title": "Fortnite World Cup awards record prizes",
+    "category": "Esports",
+    "decade": "2010s",
+    "description": "The Fortnite World Cup hands out a $30M prize pool, with solo winner Bugha taking $3M.",
+    "milestone": false
+  },
+  {
+    "id": "tl-2020-next-gen",
+    "year": 2020,
+    "date": "2020-11-10",
+    "title": "PS5 and Xbox Series X|S launch",
+    "category": "Consoles",
+    "decade": "2020s",
+    "description": "The ninth generation arrives with ultra-fast SSDs and ray tracing during a global pandemic.",
+    "milestone": true,
+    "impact": "Brought SSD-class streaming and ray tracing to consoles."
+  },
+  {
+    "id": "tl-2023-zelda-totk",
+    "year": 2023,
+    "title": "Tears of the Kingdom breaks records",
+    "category": "Games",
+    "decade": "2020s",
+    "description": "The Zelda sequel sells over 10 million copies in three days, a record for the franchise.",
+    "milestone": false
+  }
+]

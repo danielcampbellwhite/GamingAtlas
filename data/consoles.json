@@ -1,0 +1,322 @@
+[
+  {
+    "id": "magnavox-odyssey",
+    "name": "Magnavox Odyssey",
+    "manufacturer": "Magnavox",
+    "generation": 1,
+    "releaseYear": 1972,
+    "launchDate": "1972-09-01",
+    "discontinuedYear": 1975,
+    "unitsSold": "350,000",
+    "decade": "1970s",
+    "specs": {
+      "CPU": "Discrete transistor logic (no microprocessor)",
+      "Display": "Analog overlays on TV",
+      "Media": "Game cards / circuit boards",
+      "Launch Price": "$99.99"
+    },
+    "significance": "The world's first commercial home video game console, predating the Atari era and proving that interactive entertainment could live in the living room.",
+    "bestSellers": ["Table Tennis"]
+  },
+  {
+    "id": "atari-2600",
+    "name": "Atari 2600",
+    "manufacturer": "Atari",
+    "generation": 2,
+    "releaseYear": 1977,
+    "launchDate": "1977-09-11",
+    "discontinuedYear": 1992,
+    "unitsSold": "30 million",
+    "decade": "1970s",
+    "specs": {
+      "CPU": "MOS 6507 @ 1.19 MHz",
+      "Memory": "128 bytes RAM",
+      "Media": "ROM cartridges",
+      "Launch Price": "$199"
+    },
+    "significance": "Popularized interchangeable game cartridges and the microprocessor-based console, becoming the defining platform of early home gaming before the 1983 crash.",
+    "bestSellers": ["Pac-Man", "Space Invaders", "Pitfall!"]
+  },
+  {
+    "id": "nes",
+    "name": "Nintendo Entertainment System (NES)",
+    "manufacturer": "Nintendo",
+    "generation": 3,
+    "releaseYear": 1983,
+    "launchDate": "1985-10-18",
+    "discontinuedYear": 1995,
+    "unitsSold": "61.91 million",
+    "decade": "1980s",
+    "specs": {
+      "CPU": "Ricoh 2A03 @ 1.79 MHz",
+      "Memory": "2 KB RAM",
+      "Media": "ROM cartridges",
+      "Launch Price": "$179"
+    },
+    "significance": "Revived the North American console market after the 1983 crash and established Nintendo's licensing model, the D-pad, and franchises like Super Mario Bros. and The Legend of Zelda.",
+    "bestSellers": ["Super Mario Bros.", "Duck Hunt", "The Legend of Zelda"]
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo (SNES)",
+    "manufacturer": "Nintendo",
+    "generation": 4,
+    "releaseYear": 1990,
+    "launchDate": "1991-08-23",
+    "discontinuedYear": 2003,
+    "unitsSold": "49.1 million",
+    "decade": "1990s",
+    "specs": {
+      "CPU": "Ricoh 5A22 @ 3.58 MHz",
+      "Memory": "128 KB RAM",
+      "Media": "ROM cartridges",
+      "Launch Price": "$199"
+    },
+    "significance": "The 16-bit powerhouse of the console wars with Sega, delivering Mode 7 graphics and era-defining titles like Super Mario World and The Legend of Zelda: A Link to the Past.",
+    "bestSellers": ["Super Mario World", "Donkey Kong Country", "Super Mario Kart"]
+  },
+  {
+    "id": "nintendo-64",
+    "name": "Nintendo 64",
+    "manufacturer": "Nintendo",
+    "generation": 5,
+    "releaseYear": 1996,
+    "launchDate": "1996-06-23",
+    "discontinuedYear": 2002,
+    "unitsSold": "32.93 million",
+    "decade": "1990s",
+    "specs": {
+      "CPU": "NEC VR4300 @ 93.75 MHz",
+      "Memory": "4 MB RDRAM",
+      "Media": "ROM cartridges",
+      "Launch Price": "$199"
+    },
+    "significance": "Brought analog-stick 3D control to the mainstream and redefined the genre with Super Mario 64 and The Legend of Zelda: Ocarina of Time.",
+    "bestSellers": ["Super Mario 64", "GoldenEye 007", "Mario Kart 64"]
+  },
+  {
+    "id": "gamecube",
+    "name": "Nintendo GameCube",
+    "manufacturer": "Nintendo",
+    "generation": 6,
+    "releaseYear": 2001,
+    "launchDate": "2001-09-14",
+    "discontinuedYear": 2007,
+    "unitsSold": "21.74 million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "IBM PowerPC Gekko @ 485 MHz",
+      "Memory": "43 MB",
+      "Media": "8 cm miniDVD optical discs",
+      "Launch Price": "$199"
+    },
+    "significance": "Nintendo's first disc-based console, beloved for its compact design and library including Super Smash Bros. Melee and Metroid Prime.",
+    "bestSellers": ["Super Smash Bros. Melee", "Mario Kart: Double Dash!!", "Animal Crossing"]
+  },
+  {
+    "id": "wii",
+    "name": "Nintendo Wii",
+    "manufacturer": "Nintendo",
+    "generation": 7,
+    "releaseYear": 2006,
+    "launchDate": "2006-11-19",
+    "discontinuedYear": 2013,
+    "unitsSold": "101.63 million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "IBM PowerPC Broadway @ 729 MHz",
+      "Memory": "88 MB",
+      "Media": "12 cm optical discs",
+      "Launch Price": "$249"
+    },
+    "significance": "Brought motion controls to the masses and expanded gaming to entirely new audiences, becoming a cultural phenomenon with Wii Sports.",
+    "bestSellers": ["Wii Sports", "Mario Kart Wii", "Wii Sports Resort"]
+  },
+  {
+    "id": "switch",
+    "name": "Nintendo Switch",
+    "manufacturer": "Nintendo",
+    "generation": 8,
+    "releaseYear": 2017,
+    "launchDate": "2017-03-03",
+    "unitsSold": "146+ million",
+    "decade": "2010s",
+    "specs": {
+      "CPU": "NVIDIA Tegra X1",
+      "Memory": "4 GB RAM",
+      "Media": "Game cards / digital",
+      "Launch Price": "$299"
+    },
+    "significance": "A hybrid home/handheld console that became one of the best-selling systems of all time, anchored by The Legend of Zelda: Breath of the Wild and Animal Crossing: New Horizons.",
+    "bestSellers": ["Mario Kart 8 Deluxe", "Animal Crossing: New Horizons", "The Legend of Zelda: Breath of the Wild"]
+  },
+  {
+    "id": "playstation",
+    "name": "Sony PlayStation",
+    "manufacturer": "Sony",
+    "generation": 5,
+    "releaseYear": 1994,
+    "launchDate": "1994-12-03",
+    "discontinuedYear": 2006,
+    "unitsSold": "102.49 million",
+    "decade": "1990s",
+    "specs": {
+      "CPU": "MIPS R3000A @ 33.87 MHz",
+      "Memory": "2 MB RAM",
+      "Media": "CD-ROM",
+      "Launch Price": "$299"
+    },
+    "significance": "Sony's debut console upended the industry, championing CD media and mature 3D titles and toppling Nintendo's dominance.",
+    "bestSellers": ["Gran Turismo", "Final Fantasy VII", "Metal Gear Solid"]
+  },
+  {
+    "id": "playstation-2",
+    "name": "PlayStation 2",
+    "manufacturer": "Sony",
+    "generation": 6,
+    "releaseYear": 2000,
+    "launchDate": "2000-03-04",
+    "discontinuedYear": 2013,
+    "unitsSold": "155+ million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "Emotion Engine @ 294 MHz",
+      "Memory": "32 MB RDRAM",
+      "Media": "DVD-ROM",
+      "Launch Price": "$299"
+    },
+    "significance": "The best-selling home console in history, doubling as an affordable DVD player and home to an unmatched library.",
+    "bestSellers": ["Grand Theft Auto: San Andreas", "Gran Turismo 3", "Final Fantasy X"]
+  },
+  {
+    "id": "playstation-3",
+    "name": "PlayStation 3",
+    "manufacturer": "Sony",
+    "generation": 7,
+    "releaseYear": 2006,
+    "launchDate": "2006-11-11",
+    "discontinuedYear": 2017,
+    "unitsSold": "87.4 million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "Cell Broadband Engine @ 3.2 GHz",
+      "Memory": "256 MB XDR + 256 MB GDDR3",
+      "Media": "Blu-ray Disc",
+      "Launch Price": "$499"
+    },
+    "significance": "Helped win the format war by standardizing Blu-ray and pushed HD gaming and online play forward despite a rocky launch.",
+    "bestSellers": ["Grand Theft Auto V", "The Last of Us", "Uncharted 2: Among Thieves"]
+  },
+  {
+    "id": "playstation-4",
+    "name": "PlayStation 4",
+    "manufacturer": "Sony",
+    "generation": 8,
+    "releaseYear": 2013,
+    "launchDate": "2013-11-15",
+    "unitsSold": "117+ million",
+    "decade": "2010s",
+    "specs": {
+      "CPU": "AMD Jaguar 8-core @ 1.6 GHz",
+      "Memory": "8 GB GDDR5",
+      "Media": "Blu-ray Disc / digital",
+      "Launch Price": "$399"
+    },
+    "significance": "Dominated its generation with a developer-friendly architecture and a wave of acclaimed exclusives.",
+    "bestSellers": ["God of War", "Marvel's Spider-Man", "The Last of Us Part II"]
+  },
+  {
+    "id": "playstation-5",
+    "name": "PlayStation 5",
+    "manufacturer": "Sony",
+    "generation": 9,
+    "releaseYear": 2020,
+    "launchDate": "2020-11-12",
+    "unitsSold": "60+ million",
+    "decade": "2020s",
+    "specs": {
+      "CPU": "AMD Zen 2 8-core @ 3.5 GHz",
+      "GPU": "AMD RDNA 2, 10.28 TFLOPs",
+      "Memory": "16 GB GDDR6",
+      "Media": "Ultra HD Blu-ray / digital",
+      "Launch Price": "$499"
+    },
+    "significance": "Introduced ultra-fast SSD streaming and the haptic DualSense controller, defining the current generation of console gaming.",
+    "bestSellers": ["Marvel's Spider-Man 2", "God of War Ragnarök", "Gran Turismo 7"]
+  },
+  {
+    "id": "xbox",
+    "name": "Microsoft Xbox",
+    "manufacturer": "Microsoft",
+    "generation": 6,
+    "releaseYear": 2001,
+    "launchDate": "2001-11-15",
+    "discontinuedYear": 2009,
+    "unitsSold": "24 million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "Intel Pentium III @ 733 MHz",
+      "Memory": "64 MB DDR",
+      "Media": "DVD-ROM, built-in HDD",
+      "Launch Price": "$299"
+    },
+    "significance": "Microsoft's entry into hardware, bundling a hard drive and Ethernet that laid the groundwork for Xbox Live and modern online console gaming.",
+    "bestSellers": ["Halo: Combat Evolved", "Halo 2", "Fable"]
+  },
+  {
+    "id": "xbox-360",
+    "name": "Xbox 360",
+    "manufacturer": "Microsoft",
+    "generation": 7,
+    "releaseYear": 2005,
+    "launchDate": "2005-11-22",
+    "discontinuedYear": 2016,
+    "unitsSold": "84+ million",
+    "decade": "2000s",
+    "specs": {
+      "CPU": "IBM Xenon tri-core @ 3.2 GHz",
+      "Memory": "512 MB GDDR3",
+      "Media": "DVD-ROM",
+      "Launch Price": "$299"
+    },
+    "significance": "Mainstreamed online multiplayer and digital storefronts through Xbox Live, defining the HD era and the achievements meta-game.",
+    "bestSellers": ["Halo 3", "Grand Theft Auto V", "Call of Duty: Modern Warfare 2"]
+  },
+  {
+    "id": "xbox-one",
+    "name": "Xbox One",
+    "manufacturer": "Microsoft",
+    "generation": 8,
+    "releaseYear": 2013,
+    "launchDate": "2013-11-22",
+    "unitsSold": "58 million",
+    "decade": "2010s",
+    "specs": {
+      "CPU": "AMD Jaguar 8-core @ 1.75 GHz",
+      "Memory": "8 GB DDR3",
+      "Media": "Blu-ray Disc / digital",
+      "Launch Price": "$499"
+    },
+    "significance": "Pivoted Xbox toward services like Game Pass and backward compatibility after a controversial reveal.",
+    "bestSellers": ["Forza Horizon 4", "Halo 5: Guardians", "Sea of Thieves"]
+  },
+  {
+    "id": "xbox-series-x",
+    "name": "Xbox Series X",
+    "manufacturer": "Microsoft",
+    "generation": 9,
+    "releaseYear": 2020,
+    "launchDate": "2020-11-10",
+    "unitsSold": "21+ million",
+    "decade": "2020s",
+    "specs": {
+      "CPU": "AMD Zen 2 8-core @ 3.8 GHz",
+      "GPU": "AMD RDNA 2, 12 TFLOPs",
+      "Memory": "16 GB GDDR6",
+      "Media": "Ultra HD Blu-ray / digital",
+      "Launch Price": "$499"
+    },
+    "significance": "Microsoft's most powerful console, built around Game Pass, Quick Resume, and a services-first vision of gaming.",
+    "bestSellers": ["Halo Infinite", "Forza Horizon 5", "Starfield"]
+  }
+]
