@@ -6,16 +6,17 @@ import type { NextConfig } from "next";
  * The site is exported as fully static HTML/CSS/JS (`output: "export"`) so it
  * can be served by GitHub Pages with no server runtime.
  *
- * `basePath` / `assetPrefix` default to the project-site path
- * (https://<user>.github.io/gamingatlas) but can be overridden with the
- * NEXT_PUBLIC_BASE_PATH env var (e.g. set it to "" when deploying to a custom
- * domain or a user/organization page served from the domain root).
+ * The site is served from a custom apex domain (https://gamingatlas.co.uk) at
+ * the domain ROOT, so the base path is empty by default. To host it instead as
+ * a GitHub Pages project site (https://<user>.github.io/GamingAtlas), set
+ * NEXT_PUBLIC_BASE_PATH="/GamingAtlas".
  */
 const isProd = process.env.NODE_ENV === "production";
+void isProd;
 
-// Allow the workflow / custom domains to override the base path.
-const rawBasePath =
-  process.env.NEXT_PUBLIC_BASE_PATH ?? (isProd ? "/GamingAtlas" : "");
+// Custom domain serves from root → empty base path. Override via env var if you
+// deploy to a project-site sub-path instead.
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const basePath = rawBasePath === "/" ? "" : rawBasePath;
 
 const nextConfig: NextConfig = {
