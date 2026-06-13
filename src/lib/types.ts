@@ -70,12 +70,26 @@ export interface Article {
   content: string;
 }
 
+export interface Game {
+  id: string;
+  title: string;
+  year: number;
+  decade: string;
+  developer: string;
+  publisher: string;
+  platforms: string[];
+  genre: string;
+  series?: string;
+  description: string;
+  significance: string;
+}
+
 /** A normalized item used by the global search index. */
 export interface SearchItem {
   id: string;
   title: string;
   description: string;
-  type: "Article" | "Timeline" | "Console" | "Record" | "Legend";
+  type: "Article" | "Timeline" | "Console" | "Record" | "Legend" | "Game";
   href: string;
   keywords: string;
 }

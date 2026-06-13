@@ -5,12 +5,21 @@ import { useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { SearchItem } from "@/lib/types";
 
-const types = ["All", "Article", "Timeline", "Console", "Record", "Legend"] as const;
+const types = [
+  "All",
+  "Article",
+  "Timeline",
+  "Console",
+  "Game",
+  "Record",
+  "Legend",
+] as const;
 
 const typeStyles: Record<string, string> = {
   Article: "border-magenta-500/30 bg-magenta-500/10 text-magenta-400",
   Timeline: "border-atlas-400/30 bg-atlas-500/10 text-atlas-200",
   Console: "border-emerald-400/30 bg-emerald-500/10 text-emerald-300",
+  Game: "border-magenta-500/30 bg-magenta-500/10 text-magenta-400",
   Record: "border-amber-400/30 bg-amber-500/10 text-amber-300",
   Legend: "border-violet-400/30 bg-violet-500/10 text-violet-300",
 };

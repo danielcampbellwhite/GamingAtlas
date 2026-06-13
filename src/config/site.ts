@@ -23,10 +23,12 @@ export const siteConfig = {
   nav: [
     { label: "Timeline", href: "/timeline" },
     { label: "Consoles", href: "/consoles" },
-    { label: "World Records", href: "/records" },
+    { label: "Games", href: "/games" },
+    { label: "Records", href: "/records" },
     { label: "Legends", href: "/legends" },
     { label: "Milestones", href: "/milestones" },
     { label: "Blog", href: "/blog" },
+    { label: "Quiz", href: "/quiz" },
     { label: "Search", href: "/search" },
   ],
 } as const;

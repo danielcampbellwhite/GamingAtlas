@@ -1,10 +1,17 @@
 import type { MetadataRoute } from "next";
 import { absoluteUrl, decades } from "@/config/site";
-import { getArticles } from "@/lib/data";
+import {
+  getArticles,
+  getConsoles,
+  getGames,
+  getLegends,
+  getRecords,
+} from "@/lib/data";
 
 /**
  * Static sitemap generated at build time. Includes every top-level route, all
- * decade pages, and every blog article.
+ * decade pages, every blog article, and every detail page (consoles, games,
+ * legends, records).
  */
 export const dynamic = "force-static";
 
@@ -15,10 +22,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/timeline",
     "/consoles",
+    "/games",
     "/records",
     "/legends",
     "/milestones",
     "/blog",
+    "/quiz",
     "/search",
   ].map((path) => ({
     url: absoluteUrl(path),
@@ -41,5 +50,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...decadeRoutes, ...articleRoutes];
+  const detailRoutes = [
+    ...getConsoles().map((c) => `/consoles/${c.id}`),
+    ...getGames().map((g) => `/games/${g.id}`),
+    ...getLegends().map((l) => `/legends/${l.id}`),
+    ...getRecords().map((r) => `/records/${r.id}`),
+  ].map((path) => ({
+    url: absoluteUrl(path),
+    lastModified: now,
+    changeFrequency: "yearly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...decadeRoutes, ...articleRoutes, ...detailRoutes];
 }

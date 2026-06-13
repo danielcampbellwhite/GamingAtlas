@@ -10,10 +10,12 @@ import timelineData from "@/data/timeline.json";
 import recordsData from "@/data/records.json";
 import legendsData from "@/data/legends.json";
 import articlesData from "@/data/articles.json";
+import gamesData from "@/data/games.json";
 
 import type {
   Article,
   Console,
+  Game,
   GameRecord,
   Legend,
   SearchItem,
@@ -70,6 +72,10 @@ export function getRecords(): GameRecord[] {
   return recordsData as unknown as GameRecord[];
 }
 
+export function getRecordById(id: string): GameRecord | undefined {
+  return getRecords().find((r) => r.id === id);
+}
+
 export function getRecordCategories(): string[] {
   return Array.from(new Set(getRecords().map((r) => r.category))).sort();
 }
@@ -98,6 +104,38 @@ export function getArticleBySlug(slug: string): Article | undefined {
 
 export function getFeaturedArticles(count = 3): Article[] {
   return getArticles().slice(0, count);
+}
+
+/* ----------------------------------- Games --------------------------------- */
+
+export function getGames(): Game[] {
+  return (gamesData as unknown as Game[])
+    .slice()
+    .sort((a, b) => a.year - b.year);
+}
+
+export function getGameById(id: string): Game | undefined {
+  return getGames().find((g) => g.id === id);
+}
+
+export function getGamesByDecade(decade: string): Game[] {
+  return getGames().filter((g) => g.decade === decade);
+}
+
+export function getGameGenres(): string[] {
+  return Array.from(new Set(getGames().map((g) => g.genre))).sort();
+}
+
+/** Games sharing a series or genre with the given game (for "related"). */
+export function getRelatedGames(game: Game, count = 3): Game[] {
+  return getGames()
+    .filter(
+      (g) =>
+        g.id !== game.id &&
+        (g.genre === game.genre ||
+          (!!game.series && g.series === game.series)),
+    )
+    .slice(0, count);
 }
 
 /* ------------------------------ Random facts ------------------------------- */
@@ -158,7 +196,7 @@ export function getSearchIndex(): SearchItem[] {
       title: c.name,
       description: `${c.manufacturer} · ${c.releaseYear} · Generation ${c.generation}`,
       type: "Console",
-      href: `/consoles#${c.id}`,
+      href: `/consoles/${c.id}`,
       keywords: `${c.name} ${c.manufacturer} ${c.significance} ${c.decade}`,
     });
   }
@@ -169,7 +207,7 @@ export function getSearchIndex(): SearchItem[] {
       title: r.title,
       description: `${r.holder} — ${r.record}`,
       type: "Record",
-      href: `/records#${r.id}`,
+      href: `/records/${r.id}`,
       keywords: `${r.title} ${r.holder} ${r.record} ${r.category} ${r.description}`,
     });
   }
@@ -180,8 +218,19 @@ export function getSearchIndex(): SearchItem[] {
       title: l.name,
       description: `${l.role}${l.company ? ` · ${l.company}` : ""}`,
       type: "Legend",
-      href: `/legends#${l.id}`,
+      href: `/legends/${l.id}`,
       keywords: `${l.name} ${l.role} ${l.company ?? ""} ${l.knownFor.join(" ")} ${l.bio}`,
+    });
+  }
+
+  for (const g of getGames()) {
+    items.push({
+      id: `game-${g.id}`,
+      title: g.title,
+      description: `${g.developer} · ${g.year} · ${g.genre}`,
+      type: "Game",
+      href: `/games/${g.id}`,
+      keywords: `${g.title} ${g.developer} ${g.publisher} ${g.genre} ${g.series ?? ""} ${g.description} ${g.platforms.join(" ")}`,
     });
   }
 

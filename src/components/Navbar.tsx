@@ -32,7 +32,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {siteConfig.nav.map((item) => (
             <li key={item.href}>
               <Link
@@ -52,7 +52,7 @@ export default function Navbar() {
         {/* Mobile toggle */}
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-200 hover:bg-white/10 md:hidden"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-slate-200 hover:bg-white/10 lg:hidden"
           aria-label="Toggle navigation menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-white/10 bg-ink-950 md:hidden">
+        <div className="border-t border-white/10 bg-ink-950 lg:hidden">
           <ul className="container-atlas flex flex-col py-2">
             {siteConfig.nav.map((item) => (
               <li key={item.href}>

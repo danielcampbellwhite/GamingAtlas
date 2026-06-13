@@ -13,7 +13,16 @@ const categories: (TimelineCategory | "All")[] = [
   "Esports",
 ];
 
+const dotColors: Record<string, string> = {
+  Consoles: "bg-atlas-400",
+  Games: "bg-magenta-400",
+  Companies: "bg-amber-400",
+  Technology: "bg-emerald-400",
+  Esports: "bg-violet-400",
+};
+
 type SortKey = "year-asc" | "year-desc";
+type ViewMode = "grid" | "track";
 
 /**
  * Interactive timeline with client-side filtering (by category), free-text
@@ -29,6 +38,7 @@ export default function TimelineExplorer({
   const [category, setCategory] = useState<(typeof categories)[number]>("All");
   const [sort, setSort] = useState<SortKey>("year-asc");
   const [milestonesOnly, setMilestonesOnly] = useState(false);
+  const [view, setView] = useState<ViewMode>("grid");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -83,6 +93,25 @@ export default function TimelineExplorer({
               />
               Milestones only
             </label>
+
+            {/* View toggle */}
+            <div className="flex rounded-lg border border-white/10 bg-ink-900 p-0.5">
+              {(["grid", "track"] as ViewMode[]).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  onClick={() => setView(v)}
+                  className={`rounded-md px-3 py-1.5 text-sm font-medium capitalize transition ${
+                    view === v
+                      ? "bg-atlas-500 text-ink-950"
+                      : "text-slate-300 hover:text-white"
+                  }`}
+                  aria-pressed={view === v}
+                >
+                  {v === "grid" ? "Grid" : "Timeline"}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -109,16 +138,54 @@ export default function TimelineExplorer({
         {events.length} events
       </p>
 
-      {filtered.length > 0 ? (
+      {filtered.length === 0 ? (
+        <p className="rounded-xl border border-white/10 bg-white/5 p-8 text-center text-slate-400">
+          No events match your filters. Try broadening your search.
+        </p>
+      ) : view === "grid" ? (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((e) => (
             <TimelineCard key={e.id} event={e} />
           ))}
         </div>
       ) : (
-        <p className="rounded-xl border border-white/10 bg-white/5 p-8 text-center text-slate-400">
-          No events match your filters. Try broadening your search.
-        </p>
+        /* Horizontal visual timeline — scroll left/right to travel through time */
+        <div className="-mx-4 overflow-x-auto px-4 pb-4 sm:mx-0 sm:px-0">
+          <div className="relative min-w-max pt-10">
+            {/* The horizontal track line */}
+            <div className="absolute left-0 right-0 top-12 h-0.5 bg-gradient-to-r from-atlas-400/40 via-white/15 to-magenta-500/40" />
+            <ol className="flex gap-6">
+              {filtered.map((e) => (
+                <li key={e.id} className="relative w-64 shrink-0">
+                  <div className="flex flex-col items-center">
+                    <span className="font-display text-lg font-bold text-white">
+                      {e.year}
+                    </span>
+                    <span
+                      className={`mt-1 h-3 w-3 rounded-full ring-4 ring-ink-950 ${
+                        dotColors[e.category] ?? "bg-white"
+                      }`}
+                      aria-hidden
+                    />
+                  </div>
+                  <a
+                    href={`#${e.id}`}
+                    className="card-surface mt-4 block p-4"
+                    title={e.title}
+                  >
+                    <span className="chip">{e.category}</span>
+                    <h3 className="mt-2 text-sm font-semibold text-white">
+                      {e.title}
+                    </h3>
+                    <p className="mt-1 line-clamp-3 text-xs text-slate-400">
+                      {e.description}
+                    </p>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
       )}
     </div>
   );
