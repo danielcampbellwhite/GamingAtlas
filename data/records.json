@@ -1,0 +1,108 @@
+[
+  {
+    "id": "rec-minecraft-sales",
+    "category": "Sales",
+    "title": "Best-selling video game of all time",
+    "holder": "Minecraft (Mojang)",
+    "record": "300+ million copies sold",
+    "date": "2023-10-01",
+    "source": "Mojang / Microsoft",
+    "sourceUrl": "https://www.minecraft.net",
+    "description": "Minecraft is the best-selling video game in history, with sales surpassing 300 million copies across all platforms."
+  },
+  {
+    "id": "rec-gta5-revenue",
+    "category": "Sales",
+    "title": "Highest-grossing entertainment product",
+    "holder": "Grand Theft Auto V (Rockstar Games)",
+    "record": "$8+ billion revenue",
+    "date": "2022-01-01",
+    "source": "Take-Two Interactive",
+    "sourceUrl": "https://www.rockstargames.com",
+    "description": "GTA V is among the most financially successful entertainment products ever, having sold over 190 million copies."
+  },
+  {
+    "id": "rec-tetris-sales",
+    "category": "Sales",
+    "title": "Best-selling single platform game (paid)",
+    "holder": "Tetris",
+    "record": "100+ million paid downloads",
+    "date": "2010-01-01",
+    "source": "The Tetris Company",
+    "description": "Across its many versions, Tetris has sold hundreds of millions of copies, making it one of the most successful franchises ever."
+  },
+  {
+    "id": "rec-ps2-console",
+    "category": "Hardware",
+    "title": "Best-selling home console of all time",
+    "holder": "PlayStation 2 (Sony)",
+    "record": "155+ million units",
+    "date": "2013-01-01",
+    "source": "Sony Interactive Entertainment",
+    "description": "The PlayStation 2 holds the record for the best-selling home video game console in history."
+  },
+  {
+    "id": "rec-smb-speedrun",
+    "category": "Speedrun",
+    "title": "Fastest any% completion of Super Mario Bros.",
+    "holder": "Speedrunning community (sub-4:55)",
+    "record": "Under 4 minutes 55 seconds",
+    "date": "2023-01-01",
+    "source": "speedrun.com",
+    "sourceUrl": "https://www.speedrun.com/smb1",
+    "description": "World-class runners complete the 1985 classic in under five minutes using frame-perfect movement and wall-clip exploits."
+  },
+  {
+    "id": "rec-esports-dota",
+    "category": "Esports",
+    "title": "Largest esports tournament prize pool",
+    "holder": "The International (Dota 2)",
+    "record": "$40+ million prize pool (2021)",
+    "date": "2021-10-01",
+    "source": "Valve",
+    "sourceUrl": "https://www.dota2.com",
+    "description": "Dota 2's The International 2021 featured a crowdfunded prize pool exceeding $40 million, the largest in esports history."
+  },
+  {
+    "id": "rec-esports-earnings",
+    "category": "Esports",
+    "title": "Highest individual esports earnings",
+    "holder": "Johan 'N0tail' Sundstein (Dota 2)",
+    "record": "$7+ million in career winnings",
+    "date": "2022-01-01",
+    "source": "Esports Earnings",
+    "sourceUrl": "https://www.esportsearnings.com",
+    "description": "The two-time International champion is among the highest-earning competitive players in esports history."
+  },
+  {
+    "id": "rec-longest-marathon",
+    "category": "Endurance",
+    "title": "Longest video game marathon",
+    "holder": "Carrie Swidecki & others",
+    "record": "Over 138 hours",
+    "date": "2015-01-01",
+    "source": "Guinness World Records",
+    "sourceUrl": "https://www.guinnessworldrecords.com",
+    "description": "Endurance gamers have set Guinness World Records for marathon sessions exceeding five days of continuous play."
+  },
+  {
+    "id": "rec-wii-sports",
+    "category": "Sales",
+    "title": "Best-selling console-exclusive game",
+    "holder": "Wii Sports (Nintendo)",
+    "record": "82+ million copies",
+    "date": "2017-01-01",
+    "source": "Nintendo",
+    "description": "Bundled with most Wii consoles, Wii Sports became one of the best-selling games of all time."
+  },
+  {
+    "id": "rec-mario-kart-8",
+    "category": "Sales",
+    "title": "Best-selling racing game",
+    "holder": "Mario Kart 8 Deluxe (Nintendo)",
+    "record": "60+ million copies",
+    "date": "2024-01-01",
+    "source": "Nintendo",
+    "description": "Mario Kart 8 Deluxe is the best-selling racing game of all time and the top-selling Switch title."
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "id": "shigeru-miyamoto",
+    "name": "Shigeru Miyamoto",
+    "role": "Game Designer & Producer",
+    "country": "Japan",
+    "born": 1952,
+    "company": "Nintendo",
+    "knownFor": ["Super Mario Bros.", "The Legend of Zelda", "Donkey Kong"],
+    "notableWorks": [
+      "Donkey Kong (1981)",
+      "Super Mario Bros. (1985)",
+      "The Legend of Zelda (1986)",
+      "Super Mario 64 (1996)"
+    ],
+    "bio": "Often called the father of modern video games, Shigeru Miyamoto created some of the most influential franchises in history. His emphasis on playful, intuitive design shaped the language of game mechanics for generations of developers."
+  },
+  {
+    "id": "hideo-kojima",
+    "name": "Hideo Kojima",
+    "role": "Game Director & Writer",
+    "country": "Japan",
+    "born": 1963,
+    "company": "Kojima Productions",
+    "knownFor": ["Metal Gear Solid", "Death Stranding"],
+    "notableWorks": [
+      "Metal Gear (1987)",
+      "Metal Gear Solid (1998)",
+      "Metal Gear Solid V (2015)",
+      "Death Stranding (2019)"
+    ],
+    "bio": "A pioneer of cinematic, narrative-driven games, Hideo Kojima is renowned for blending stealth gameplay with film-quality storytelling. He helped establish the stealth genre and is celebrated as one of gaming's foremost auteurs."
+  },
+  {
+    "id": "john-carmack",
+    "name": "John Carmack",
+    "role": "Programmer & Engineer",
+    "country": "United States",
+    "born": 1970,
+    "company": "id Software",
+    "knownFor": ["DOOM", "Quake", "Wolfenstein 3D"],
+    "notableWorks": [
+      "Commander Keen (1990)",
+      "Wolfenstein 3D (1992)",
+      "DOOM (1993)",
+      "Quake (1996)"
+    ],
+    "bio": "A legendary engine programmer, John Carmack pioneered real-time 3D graphics on consumer hardware. His work on DOOM and Quake defined the first-person shooter and advanced PC gaming, networked multiplayer, and open-source game code."
+  },
+  {
+    "id": "gabe-newell",
+    "name": "Gabe Newell",
+    "role": "Co-founder & President",
+    "country": "United States",
+    "born": 1962,
+    "company": "Valve",
+    "knownFor": ["Half-Life", "Steam", "Portal"],
+    "notableWorks": [
+      "Half-Life (1998)",
+      "Steam (2003)",
+      "Half-Life 2 (2004)",
+      "Portal (2007)"
+    ],
+    "bio": "Co-founder of Valve, Gabe Newell led the creation of the genre-defining Half-Life series and built Steam into the dominant PC games platform, reshaping how games are distributed, sold, and played worldwide."
+  },
+  {
+    "id": "roberta-williams",
+    "name": "Roberta Williams",
+    "role": "Game Designer & Pioneer",
+    "country": "United States",
+    "born": 1953,
+    "company": "Sierra On-Line",
+    "knownFor": ["King's Quest", "Mystery House", "Phantasmagoria"],
+    "notableWorks": [
+      "Mystery House (1980)",
+      "King's Quest (1984)",
+      "Phantasmagoria (1995)"
+    ],
+    "bio": "A trailblazer of the adventure game genre, Roberta Williams co-founded Sierra On-Line and created the King's Quest series, helping pioneer graphical adventure games and storytelling in interactive media."
+  },
+  {
+    "id": "lee-faker-sang-hyeok",
+    "name": "Lee 'Faker' Sang-hyeok",
+    "role": "Professional Esports Player",
+    "country": "South Korea",
+    "born": 1996,
+    "company": "T1",
+    "knownFor": ["League of Legends", "World Championships"],
+    "notableWorks": [
+      "Multiple League of Legends World Championships",
+      "Considered the greatest LoL player of all time"
+    ],
+    "bio": "Widely regarded as the greatest League of Legends player ever, Faker has won multiple World Championships and become the face of competitive esports, inspiring a generation of professional players."
+  }
+]
